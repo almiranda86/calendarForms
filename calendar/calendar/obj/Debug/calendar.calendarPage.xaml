@@ -10,9 +10,36 @@
 			<StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
 				<StackLayout x:Name="calendarBody">
 
-					
 				</StackLayout>
 				<StackLayout x:Name="controlArea">
+					<Grid BackgroundColor="Gray">
+						<Grid.RowDefinitions>
+							<RowDefinition Height="1*" />
+						</Grid.RowDefinitions>
+						<Grid.ColumnDefinitions>
+							 <ColumnDefinition Width="*" />
+							<ColumnDefinition Width="*" />
+							<ColumnDefinition Width="*" />
+						</Grid.ColumnDefinitions>
+
+						<Label Text="Prev Month" Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+							<Label.GestureRecognizers>
+						        <TapGestureRecognizer
+						                Tapped="OnPrevMonth" />
+					  		</Label.GestureRecognizers>
+				  		</Label>
+							
+						<Label Text="Select" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+						
+						<Label Text="Next Month" Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+							<Label.GestureRecognizers>
+						        <TapGestureRecognizer
+						                Tapped="OnNextMonth" />
+					  		</Label.GestureRecognizers>						
+						</Label>
+						
+					</Grid>
 				</StackLayout>				
 			</StackLayout>
 		</AbsoluteLayout>

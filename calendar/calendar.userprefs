@@ -1,10 +1,14 @@
 ﻿<Properties StartupConfiguration="{E1507CCC-26FC-4EFD-A332-4BA43E90BA32}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="calendar Status">
     <Files>
-      <File FileName="calendar/calendarPage.xaml" Line="11" Column="31" />
-      <File FileName="calendar/calendarPage.xaml.cs" Line="75" Column="44" />
+      <File FileName="calendar/calendarPage.xaml" Line="26" Column="2" />
+      <File FileName="calendar/calendarPage.xaml.cs" Line="177" Column="19" />
       <File FileName="calendar/App.xaml.cs" Line="1" Column="1" />
-      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="iOS/Main.cs" Line="18" Column="4" />
+      <File FileName="calendar/obj/Debug/calendar.calendarPage.xaml.g.cs" Line="23" Column="63" />
+      <File FileName="calendar/calendar.csproj" Line="13" Column="64" />
+      <File FileName="iOS/calendar.iOS.csproj" Line="28" Column="34" />
+      <File FileName="calendar Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.calendar.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DAC7FBEA-8252-44BA-91B1-C563A1F279D7" />

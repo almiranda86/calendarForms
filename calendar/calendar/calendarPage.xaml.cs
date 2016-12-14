@@ -6,7 +6,7 @@ namespace calendar
 	public partial class calendarPage : ContentPage
 	{
 		//create a grid to print the calendar
-		Grid gridCalendar = new Grid();
+		Grid gridCalendar;
 		DateTime date = new DateTime();
 
 		public calendarPage()
@@ -22,6 +22,9 @@ namespace calendar
 
 		private void writeCalendar(DateTime _date)
 		{
+			gridCalendar = new Grid();
+			gridCalendar.BackgroundColor = Color.FromHex("#e5e6eb");
+
 			//we allways will have 7 columns in a calendar
 			gridCalendar.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
 			gridCalendar.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
@@ -38,42 +41,43 @@ namespace calendar
 			for (int d = 0; d < 7; d++)
 			{
 				Label label = new Label();
-				label.FontSize = 10;
+				label.FontSize = 16;
+				label.HorizontalTextAlignment = TextAlignment.Center;
+				label.VerticalTextAlignment = TextAlignment.Center;
 
 				switch (d)
 				{
 					case 0:
-						label.Text = "Sunday";
-
+						label.Text = "Sun";
 						gridCalendar.Children.Add(label, d, 0);
 						break;
 					case 1:
-						label.Text = "Monday";
+						label.Text = "Mon";
 						gridCalendar.Children.Add(label, d, 0);
 						break;
 
 					case 2:
-						label.Text = "Tuesday";
+						label.Text = "Tue";
 						gridCalendar.Children.Add(label, d, 0);
 						break;
 
 					case 3:
-						label.Text = "Wednesday";
+						label.Text = "Wed";
 						gridCalendar.Children.Add(label, d, 0);
 						break;
 
 					case 4:
-						label.Text = "Thursday";
+						label.Text = "Thu";
 						gridCalendar.Children.Add(label, d, 0);
 						break;
 
 					case 5:
-						label.Text = "Friday";
+						label.Text = "Fri";
 						gridCalendar.Children.Add(label, d, 0);
 						break;
 
 					case 6:
-						label.Text = "Saturday";
+						label.Text = "Sat";
 						gridCalendar.Children.Add(label, d, 0);
 						break;
 
@@ -126,7 +130,13 @@ namespace calendar
 				}
 			}
 
-			calendarBody.Children.Add(gridCalendar);
+			if (calendarBody.Children.Count > 0)
+			{
+				calendarBody.Children[0] = gridCalendar;
+			}
+			else {
+				calendarBody.Children.Add(gridCalendar);
+			}
 		}
 
 		private void writeCalendarRow(int week, int weekday, int day)
@@ -155,5 +165,22 @@ namespace calendar
 
 			gridCalendar.Children.Add(calendarDay, weekday, week);
 		}
+
+
+		void OnPrevMonth(object sender, EventArgs args)
+		{
+			var prevDate = date.AddMonths(-1);
+			date = prevDate;
+			writeCalendar(prevDate);
+		}
+
+		void OnNextMonth(object sender, EventArgs args)
+		{
+			var nextDate = date.AddMonths(+1);
+			date = nextDate;
+			writeCalendar(nextDate);
+		}
+
+		void OnSelectDate(object sender, EventArgs args) { }
 	}
 }
