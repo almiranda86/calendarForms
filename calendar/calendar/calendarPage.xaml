@@ -8,6 +8,9 @@
 	<ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
 		<AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
 			<StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+				<StackLayout>
+					<Label x:Name="monthName" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+				</StackLayout>
 				<StackLayout x:Name="calendarBody">
 
 				</StackLayout>
@@ -29,8 +32,12 @@
 					  		</Label.GestureRecognizers>
 				  		</Label>
 							
-						<Label Text="Select" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-
+						<Label Text="Select" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+							<Label.GestureRecognizers>
+						        <TapGestureRecognizer
+						                Tapped="OnSelectDates" />
+					  		</Label.GestureRecognizers>
+				  		</Label>
 						
 						<Label Text="Next Month" Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
 							<Label.GestureRecognizers>

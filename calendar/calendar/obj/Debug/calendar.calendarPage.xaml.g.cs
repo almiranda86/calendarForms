@@ -17,6 +17,9 @@ namespace calendar {
     public partial class calendarPage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label monthName;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.StackLayout calendarBody;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -25,6 +28,7 @@ namespace calendar {
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(calendarPage));
+            monthName = this.FindByName <global::Xamarin.Forms.Label>("monthName");
             calendarBody = this.FindByName <global::Xamarin.Forms.StackLayout>("calendarBody");
             controlArea = this.FindByName <global::Xamarin.Forms.StackLayout>("controlArea");
         }

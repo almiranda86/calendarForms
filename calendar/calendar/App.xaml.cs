@@ -8,7 +8,7 @@ namespace calendar
 		{
 			InitializeComponent();
 
-			MainPage = new calendarPage();
+			MainPage = new NavigationPage(new calendarPage());
 		}
 
 		protected override void OnStart()
