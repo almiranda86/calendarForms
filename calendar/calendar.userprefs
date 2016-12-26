@@ -1,20 +1,20 @@
 ﻿<Properties StartupConfiguration="{FA12B0DE-7870-46B6-A779-34CF59778AEA}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="calendar Status">
     <Files>
-      <File FileName="calendar/calendarPage.xaml" Line="15" Column="1" />
-      <File FileName="calendar/calendarPage.xaml.cs" Line="344" Column="52" />
-      <File FileName="calendar/App.xaml.cs" Line="11" Column="53" />
+      <File FileName="calendar/calendarPage.xaml" Line="1" Column="1" />
+      <File FileName="calendar/App.xaml.cs" Line="1" Column="1" />
       <File FileName="iOS/Main.cs" Line="11" Column="3" />
       <File FileName="calendar/obj/Debug/calendar.calendarPage.xaml.g.cs" Line="1" Column="1" />
       <File FileName="calendar/calendar.csproj" Line="13" Column="64" />
-      <File FileName="calendar/listPage.xaml.cs" Line="17" Column="45" />
-      <File FileName="calendar/listPage.xaml" Line="4" Column="41" />
+      <File FileName="calendar/listPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="calendar/listPage.xaml" Line="9" Column="1" />
+      <File FileName="calendar/calendarPage.xaml.cs" Line="1" Column="1" />
       <File FileName="calendar Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.calendar.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DAC7FBEA-8252-44BA-91B1-C563A1F279D7" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.calendar.Droid PreferredExecutionTarget="Android.192.168.63.101:5555" />
+  <MonoDevelop.Ide.ItemProperties.calendar.Droid PreferredExecutionTarget="Android.Xamarin_Android_API_15" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/almiranda86/Projects/calendar/calendar/calendarPage.xaml.cs" line="20" column="1" />
