@@ -1,5 +1,10 @@
+<<<<<<< Updated upstream
 <Properties StartupConfiguration="{FA12B0DE-7870-46B6-A779-34CF59778AEA}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="calendar Status">
+=======
+﻿<Properties StartupConfiguration="{FA12B0DE-7870-46B6-A779-34CF59778AEA}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="calendar/calendarPage.xaml.cs">
+>>>>>>> Stashed changes
     <Files>
 <<<<<<< HEAD
       <File FileName="calendar/calendarPage.xaml" Line="1" Column="1" />
@@ -10,6 +15,7 @@
       <File FileName="calendar/listPage.xaml.cs" Line="1" Column="1" />
       <File FileName="calendar/listPage.xaml" Line="9" Column="1" />
       <File FileName="calendar/calendarPage.xaml.cs" Line="1" Column="1" />
+<<<<<<< Updated upstream
 =======
       <File FileName="calendar/calendarPage.xaml" Line="15" Column="1" />
       <File FileName="calendar/calendarPage.xaml.cs" Line="344" Column="52" />
@@ -21,6 +27,8 @@
       <File FileName="calendar/listPage.xaml" Line="4" Column="41" />
 >>>>>>> 1fc5c5be1a051e46703ec9d45ca8c4f955b6dcf8
       <File FileName="calendar Status" />
+=======
+>>>>>>> Stashed changes
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.calendar.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DAC7FBEA-8252-44BA-91B1-C563A1F279D7" />
